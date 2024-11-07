@@ -1,0 +1,59 @@
+.popular-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between items */
+    justify-content: center; /* Center the items */
+    margin-top: 20px; /* Add some top margin */
+    padding: 20px; /* Add padding around the container */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.place-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+    overflow: hidden; /* Clip any content that overflows */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+    width: calc(33.333% - 20px); /* Three items per row with gap */
+    max-width: 300px; /* Max width for each item */
+    margin: 0 10px; /* Add margin for spacing */
+}
+
+.place-container:hover {
+    transform: translateY(-10px); /* Lift on hover */
+}
+
+.place-container img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd; /* Border between image and text */
+}
+
+.place-info {
+    padding: 15px;
+}
+
+.place-info p {
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+.place-info p strong {
+    color: #333; /* Stronger text color */
+}
+
+.agent-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    display: inline-block; /* Ensure the avatar is inline */
+    vertical-align: middle; /* Align avatar with text */
+}
+
+.booking-link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color */
+}

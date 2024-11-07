@@ -1,0 +1,242 @@
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .agent-info {
+    display: flex;
+    align-items: center;
+}
+
+
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;      
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Adjust the size of the profile image */
+  .dropbtn img {
+    width: 40px; /* Adjust this value as needed */
+    height: 40px; /* Adjust this value as needed */
+  }
+
+.display-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+}
+
+.place-container {
+  width: calc(25% - 20px); /* Adjust the width to make the containers smaller */
+  margin: 10px; /* Add some margin around each place container */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 10px; /* Add border radius */
+  overflow: hidden; /* Hide overflow content */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.place-container:hover {
+  transform: translateY(-5px); /* Move container up on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+.place-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align items vertically with space in between */
+  height: 100%; /* Ensure the container takes up the full height */
+}
+
+.book-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: block; /* Change to block display */
+  width: 100%; /* Make the button take full width of the container */
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.book-button:hover {
+  background-color: #45a049; /* Darker Green */
+}
+
+.place-container img {
+  width: 100%; /* Ensure the image fills the container */
+  height: 200px; /* Set fixed height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  display: block; /* Make image a block element */
+}
+
+
+.place-info {
+  padding: 15px; /* Add padding for spacing */
+}
+
+.place-info p {
+  margin-bottom: 10px; /* Add some space between each piece of information */
+}
+
+.place-info p:last-child {
+  margin-bottom: 0; /* Remove bottom margin from last paragraph */
+}
+/* Style for dropdown button */
+.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style for dropdown button link */
+        .dropdown-link {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        /* Hover effect for dropdown button */
+        .dropdown-link:hover {
+            background-color: #2980b9;
+        }
+
+        /* Style for dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+            padding: 10px 0;
+            animation: dropdownAnimation 0.3s ease-in-out forwards;
+        }
+
+        /* Animation for dropdown content */
+        @keyframes dropdownAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Style for dropdown items */
+        .dropdown-item {
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+            transition: background-color 0.3s;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        /* Hover effect for dropdown items */
+        .dropdown-item:hover {
+            background-color: #ddd;
+        }
+
+        /* Show dropdown content when dropdown button is hovered */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Position dropdown content */
+        .dropdown-content {
+            right: 0;
+            top: calc(100% + 5px); /* Adjust dropdown position */
+        }
+  /* Center the popular-container within its parent */
+
+.place-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+  overflow: hidden; /* Clip any content that overflows */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  width: calc(33.333% - 20px); /* Three items per row with gap */
+  max-width: 300px; /* Max width for each item */
+  margin: 0 10px; /* Add margin for spacing */
+}
+
+.place-container:hover {
+  transform: translateY(-10px); /* Lift on hover */
+}
+
+.place-container img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd; /* Border between image and text */
+}
+
+.place-info {
+  padding: 15px;
+}
+
+.place-info p {
+  margin: 10px 0; /* Space between paragraphs */
+}
+
+.place-info p strong {
+  color: #333; /* Stronger text color */
+}
+
+.agent-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  display: inline-block; /* Ensure the avatar is inline */
+  vertical-align: middle; /* Align avatar with text */
+}
+
+.booking-link {
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color */
+}

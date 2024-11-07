@@ -1,0 +1,72 @@
+/* Profile Modal */
+#profileModal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Position the modal */
+    z-index: 1000; /* Set z-index to ensure it appears above other elements */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Allow scrolling if content exceeds viewport height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with transparency */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe; /* White background */
+    margin: 5% auto; /* Center modal vertically and horizontally */
+    padding: 20px;
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    max-width: 1000px; /* Set max width */
+  }
+  
+  /* Close Button */
+  .close {
+    position: absolute; /* Position the close button */
+    top: 10px;
+    right: 10px;
+    font-size: 24px; /* Set font size */
+    color: #aaa; /* Light gray color */
+    cursor: pointer; /* Add cursor pointer on hover */
+  }
+  
+  .close:hover {
+    color: #000; /* Change color on hover */
+  }
+  
+  /* Profile Modal Title */
+  .modal-content h2 {
+    margin-top: 0; /* Remove top margin */
+    color: #333; /* Dark text color */
+  }
+  
+  /* Profile Modal Table */
+  .modal-content table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse border */
+  }
+  
+  /* Profile Modal Table Header */
+  .modal-content th {
+    text-align: left; /* Align text to the left */
+    padding: 8px 16px; /* Add padding */
+    background-color: #f2f2f2; /* Light gray background color */
+    border-bottom: 1px solid #ddd; /* Add bottom border */
+  }
+  
+  /* Profile Modal Table Data */
+  .modal-content td {
+    padding: 8px 16px; /* Add padding */
+    border-bottom: 1px solid #ddd; /* Add bottom border */
+  }
+  
+  /* Profile Modal Table Data for Avatar */
+  .modal-content td img {
+    width: 100px; /* Set image width */
+    height: 100px; /* Set image height */
+    border-radius: 50%; /* Make image circular */
+    object-fit: cover; /* Cover image within the container */
+  }
+  

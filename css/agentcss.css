@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+ 
+/* CSS for the header */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    right: 0; /* Positioning the header to the right side */
+}
+
+
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    margin-left: 10px; /* Adjust margin to position the heading at the left side */
+}
+
+
+.header .dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.header .dropdown .dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.header .dropdown .dropbtn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.header .dropdown-content a:hover {
+    background-color: #ddd;
+}
+.sidebar {
+    width: 100%; /* Adjust the width to fill the horizontal space */
+    height: 30px; /* Adjust the height as needed */
+    background-color: #6e2b2b;
+    position: fixed; /* Position the sidebar */
+    overflow-y: hidden; /* Hide vertical overflow */
+    top: 112px; /* Align the sidebar to the bottom of the viewport */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Change display property to flex */
+    justify-content: space-around; /* Adjust alignment as needed */
+    align-items: center; /* Adjust alignment as needed */
+}
+
+.sidebar ul li {
+    /* Adjust padding and margin as needed */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-right: 1px solid #555; /* Add border between items */
+}
+
+.sidebar ul li:last-child a {
+    border-right: none; /* Remove border for the last item */
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+
+.content {
+    margin-left: 250px;
+    padding-top: 110px; /* Adjusted to leave more space for the header */
+    padding-left: 20px;
+    padding-bottom: 200px;
+}
+
+.profile-form-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999; /* Ensure it's on top of other content */
+    transition: right 0.3s ease-in-out; /* Smooth transition animation */
+    overflow-y: auto; /* Allow scrolling if the form content exceeds the screen height */
+}
+
+/* Style the dropdown button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0; /* Position the dropdown to the right side */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adjust the size of the profile image */
+.dropbtn img {
+    width: 40px; /* Adjust this value as needed */
+    height: 40px; /* Adjust this value as needed */
+}
+
+/* Additional CSS for table design */
+.container {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.btn {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn-danger {
+    background-color: #f44336;
+}
+
+.btn-danger:hover {
+    background-color: #da190b;
+}

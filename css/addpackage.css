@@ -1,0 +1,47 @@
+/* Container styles */
+.container-fluid {
+    max-width: 1200px; /* Increase max-width for wider container */
+    margin: 20px auto;
+    background-color: #f0f8ff; /* Light blue background color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding shadow */
+    padding: 20px;
+}
+
+/* Table styles */
+.table {
+    width: 100%; /* Set table width to 100% */
+}
+
+/* Table header styles */
+.table th {
+    text-align: center; /* Center align table header text */
+}
+
+/* Table cell styles */
+.table td {
+    text-align: justify; /* Justify text in table cells */
+}
+
+/* Button styles */
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success {
+    background-color: #28a745; /* Green color for success button */
+    color: #fff; /* White text color for success button */
+}
+
+.btn-inverse {
+    background-color: #6c757d; /* Gray color for inverse button */
+    color: #fff; /* White text color for inverse button */
+}
+
+.btn:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+}

@@ -1,0 +1,153 @@
+/* CSS for Instagram Style with wider container and textboxes */
+
+body {
+    background-image: url('../img/ocean.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* System font */
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    color: #fff;
+    background: #4b4b4b; /* Dark gray selection color */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Increased container width */
+    max-width: 90%; /* Limit the maximum width to ensure responsiveness */
+}
+
+.container .form {
+    background: #fff;
+    padding: 30px 35px; /* Adjust padding */
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.container .form form .form-control {
+    height: 40px;
+    font-size: 15px;
+    width: calc(100% - 16px); /* Adjusted width to fit wider container */
+}
+
+.container .form form .forget-pass {
+    margin: -15px 0 15px 0;
+}
+
+.container .form form .forget-pass a {
+    font-size: 15px;
+    color: #003569; /* Instagram blue for links */
+}
+
+.container .form form .button-container {
+    display: flex;
+    justify-content: center; /* Center align the button */
+}
+
+.container .form form .button {
+    background: #3897f0; /* Instagram blue */
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    border: none;
+    padding: 12px 20px; /* Adjust padding */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .form form .button:hover {
+    background: #3182ca; /* Darker shade of Instagram blue */
+}
+
+.container .form form .link {
+    padding: 5px 0;
+}
+
+.container .form form .link a {
+    color: #003569; /* Instagram blue for links */
+}
+
+.container .form form p,
+.container .row .alert {
+    font-size: 14px;
+}
+
+/* Additional CSS for password icons */
+.password-icons {
+    display: flex;
+}
+
+.password-icon {
+    margin-right: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 0.5; /* Initial opacity */
+}
+
+/* Styles for specific password indicators */
+.lowercase-icon.valid {
+    color: green;
+}
+
+.uppercase-icon.valid {
+    color: green;
+}
+
+.number-icon.valid {
+    color: green;
+}
+
+.special-char-icon.valid {
+    color: green;
+}
+
+/* Additional CSS for responsiveness */
+@media (max-width: 600px) {
+    .container .form {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .container .form form .button {
+        width: 100%; /* Make the button full width for smaller screens */
+    }
+}
+
+/* CSS for textboxes */
+.form-control[type="text"],
+.form-control[type="email"],
+.form-control[type="password"],
+.form-control[type="tel"],
+.form-control[type="number"],
+.form-control[type="date"],
+.form-control[type="time"],
+.form-control[type="search"],
+.form-control[type="url"],
+.form-control[type="color"],
+.form-control[type="range"],
+.form-control[type="textarea"],
+.form-control[type="select"] {
+    border: 1px solid #dbdbdb; /* Light gray border */
+    border-radius: 5px; /* Add border radius */
+    padding: 8px; /* Add padding */
+    margin-bottom: 10px; /* Add margin bottom */
+    background-color: #fafafa; /* Light gray background */
+    width: calc(100% - 16px); /* Adjusted width to fit wider container */
+}
+
+/* CSS for dropdown */
+.form-control[type="select"] {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow for webkit browsers */
+    -moz-appearance: none; /* Remove default arrow for mozilla browsers */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7 10l5 5 5-5H7z"/></svg>'); /* Add custom arrow */
+    background-position: right 10px center; /* Position arrow */
+    background-repeat: no-repeat; /* Disable arrow repeat */
+    background-size: 24px; /* Set arrow size */
+}

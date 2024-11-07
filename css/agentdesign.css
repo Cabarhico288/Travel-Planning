@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 800px; /* Adjusted max-width */
+    margin: 20px auto;
+}
+
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.avatar-wrapper,
+.credentials-wrapper {
+    margin-bottom: 20px;
+}
+
+.choose-avatar,
+.choose-credentials {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.upload-link {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.image-preview img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px groove #007bff; /* Add a 2px groove border with blue color */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avatar-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.credentials-wrapper {
+    position: relative;
+}
+
+.credentials-wrapper:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    transform: translateX(-50%);
+}
+
+.credentials-wrapper:after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #ccc;
+    transform: translateX(-50%);
+}
+
+/* Additional styles for Avatar Wrapper, Credentials Wrapper, and Submit Button */
+.avatar-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.choose-avatar {
+    font-weight: bold;
+}
+
+#avatar {
+    display: none;
+}
+
+#avatar-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Apply a box shadow for border effect */
+    border-style:dotted;
+}
+
+
+/* CSS for Credentials Wrapper */
+.credentials-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.choose-credentials {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.upload-link {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+/* CSS for Credentials Preview */
+.image-preview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-preview img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* CSS for Credentials Wrapper Border and Background */
+.credentials-wrapper {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Optional: Add hover effect */
+.credentials-wrapper:hover {
+    border-color: #007bff;
+}
+
+/* Optional: Style for the "Choose Credentials" label */
+.choose-credentials {
+    color: #333;
+    font-size: 18px;
+}
+
+.choose-credentials {
+    font-weight: bold;
+}
+
+.upload-link {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px ;
+    width: 150px; /* Adjust width of the button */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.certificate-container {
+    position: relative;
+    display: inline-block; /* Ensure the container wraps around the image */
+}
+
+.certificate-image {
+    text-align: center; /* Center the image horizontally */
+    position: relative; /* Position the delete button relative to the image */
+    margin-top: 10px; /* Add some space above the image */
+}
+
+.certificate-image img {
+    width: 200px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    border-radius: 5px; /* Add border radius for a more polished look */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.delete-button {
+    position: absolute; /* Position the button relative to the image */
+    top: 5px; /* Position the button 5px from the top */
+    left: 5px; /* Position the button 5px from the left */
+    background-color: rgba(255, 0, 0, 0.8); /* Red background color for the button */
+    color: #fff; /* White text color for the button */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Make the button round */
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
+    line-height: 30px; /* Center the text vertically */
+    text-align: center; /* Center the text horizontally */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+

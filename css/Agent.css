@@ -1,0 +1,348 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/background.jpg"); /* Adjust the path accordingly */
+    background-size: cover;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    background-position: center;
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+    height: calc(100vh - 70px); /* Subtract the height of the header and footer */
+}
+.error-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcccc;
+    color: #cc0000;
+    border: 2px solid #cc0000;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Industrial Script', cursive;
+   
+    color: black; /* Maintain the original text color */
+}
+h1 {
+    margin: 0; /* Remove default margin */
+}
+
+footer {
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px; /* Set the height of the footer */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px; /* Set maximum width of the container */
+    margin: 20px ; /* Center the container horizontally with some margin */
+   
+}
+
+.main-content {
+    width: 90%; /* Adjust the width of the main content */
+    padding: 20px; /* Add padding to the main content */
+}
+
+
+/* Styles for package container and place container */
+.package-container,
+.place-container {
+   
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px; /* Padding inside the container */
+    margin-top: 20px; /* Add margin at the top */
+    display: none; /* Initially hide the container */
+}
+
+
+.package-container form,
+.place-container form {
+    text-align: center; /* Center align form elements */
+}
+
+.package-container .form-group,
+.place-container .form-group {
+    margin-bottom: 20px; /* Add space between form groups */
+}
+
+.package-container .control-label,
+.place-container .control-label {
+    font-weight: bold; /* Bold label text */
+}
+
+.package-container .form-control,
+.place-container .form-control {
+    width: calc(100% - 20px); /* Adjust width of form controls */
+    padding: 10px; /* Add padding to form controls */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.package-container .btn,
+.place-container .btn {
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding to buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Set cursor to pointer */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.package-container .btn-success,
+.place-container .btn-success {
+    background-color: #28a745; /* Green color for success button */
+    color: #fff; /* White text color for success button */
+}
+
+.package-container .btn-inverse,
+.place-container .btn-inverse {
+    background-color: #6c757d; /* Gray color for inverse button */
+    color: #fff; /* White text color for inverse button */
+}
+
+.package-container .btn:hover,
+.place-container .btn:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.Buttons { 
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid hsla(0, 0%, 0%, 0.1); 
+    color: var(--white);
+    --fs-4: 16px;
+    font-weight: unset;
+    text-transform: uppercase;
+    padding: 20px 15px;
+}
+
+
+.Buttons ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    font-family: 'Industrial Script', cursive;
+    
+}
+
+.Buttons li {
+    margin-right: 10px; /* Add some spacing between list items */
+    border-bottom: none;
+}
+
+.Buttons li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+.Buttons li a {
+    text-decoration: none; /* Remove underline from anchor links */
+    padding: 10px 20px; /* Add padding to anchor links */
+  
+    color: black; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Buttons li a:hover {
+    background-color: lightblue; /* Change background color on hover */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Increase max-width for a wider container */
+    margin: 20px auto; /* Center the container horizontally with some margin */
+}
+
+
+.feature {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature img {
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #555;
+}
+
+/* Additional Styles for Traveler Dashboard */
+
+.sidebar {
+    width: 200px; /* Width of the sidebar */
+    background-color: #f4f4f4;
+    padding: 20px;
+    float: left; /* Float the sidebar to the left */
+    height: 80vh; /* Fill the entire height of the viewport */
+    overflow-y: auto; /* Enable scrolling if content exceeds the height */
+    border-right: 2px solid #ccc; /* Add a border to the right side */
+    margin-left: -300px;
+    margin-top: -20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: #333; /* Change heading color */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-left: 220px; /* Adjusted to accommodate the width of the sidebar */
+    padding: 20px;
+    overflow: auto; /* Enable scrolling if content exceeds the height */
+}
+
+.sidebar button {
+    background-color: red; /* Change sidebar button background color to red */
+    color: #fff; /* Change button text color */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color: darkred; /* Darken sidebar button background color on hover */
+}
+.logout-btn {
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 5px 10px; /* Adjust button padding */
+    margin: 5px 0; /* Adjust button margin */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 50px; /* Add button border radius */
+    transition: background-color 0.3s ease; /* Add transition effect */
+    width: 80px; /* Set a fixed width for the button */
+}
+
+
+.logout-btn a {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit color from parent */
+}
+
+.logout-btn:hover {
+    background-color: #2980b9; /* Change background color on hover */
+}
+/* Styles for package container */
+.package-container {
+   
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px; /* Padding inside the container */
+    margin-top: 20px; /* Add margin at the top */
+    display: none; /* Initially hide the package container */
+}
+
+.package-container form {
+    text-align: center; /* Center align form elements */
+}
+
+.package-container .form-group {
+    margin-bottom: 20px; /* Add space between form groups */
+}
+
+.package-container .control-label {
+    font-weight: bold; /* Bold label text */
+}
+
+.package-container .form-control {
+    width: calc(100% - 20px); /* Adjust width of form controls */
+    padding: 10px; /* Add padding to form controls */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.package-container .btn {
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding to buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Set cursor to pointer */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.package-container .btn-success {
+    background-color: #28a745; /* Green color for success button */
+    color: #fff; /* White text color for success button */
+}
+
+.package-container .btn-inverse {
+    background-color: #6c757d; /* Gray color for inverse button */
+    color: #fff; /* White text color for inverse button */
+}
+
+.package-container .btn:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+#editForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+#editForm.active,
+.overlay.active {
+    display: block;
+}

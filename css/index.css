@@ -1,0 +1,219 @@
+/* styles.css */
+
+/* Add your custom CSS styles here */
+/* For example: background color, font styles, etc. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/image.jpg"); /* Adjust the path accordingly */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+    height: calc(100vh - 70px); /* Subtract the height of the header and footer */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Industrial Script', cursive;
+    background-color: #0074D9; /* Maintain the original background color */
+    color: #FFF; /* Maintain the original text color */
+}
+
+footer {
+
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px; /* Set the height of the footer */
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn-container .btn {
+    margin-left: 10px; /* Add space between buttons */
+}
+
+.btn {
+    background-color: #FF4136;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #E63A2E;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+/*-----------------------------------*\
+ * #TOUR SEARCH
+\*-----------------------------------*/
+
+.tour-search {
+    background: var(--bright-navy-blue);
+    padding-block: var(--section-padding);
+  }
+  
+  .tour-search-form .input-label {
+    color: var(--white);
+    font-size: var(--fs-4);
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .tour-search-form .input-field {
+    background: var(--white);
+    padding: 10px 15px;
+    font-size: var(--fs-5);
+    border-radius: 50px;
+  }
+  
+  .tour-search-form .input-field::placeholder { color: var(--spanish-gray); }
+  
+  .tour-search-form .input-field::-webkit-datetime-edit {
+    color: var(--spanish-gray);
+    text-transform: uppercase;
+  }
+  
+  .tour-search-form .input-wrapper { margin-bottom: 15px; }
+  
+  .tour-search .btn {
+    width: 100%;
+    --border-width: 1px;
+    font-weight: var(--fw-600);
+    margin-top: 35px;
+  }
+  
+.feature {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature img {
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #555;
+}
+.container {
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Increased container width */
+    max-width: 90%; /* Limit the maximum width to ensure responsiveness */
+    opacity: 80%;
+    padding: 900px 220px 33px 33px;
+}
+
+.container .form {
+    background: #fff;
+    padding: 30px 35px; /* Adjust padding */
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.container .form form .form-control {
+    height: 40px;
+    font-size: 15px;
+    width: calc(100% - 16px); /* Adjusted width to fit wider container */
+    border: 1px solid #dbdbdb; /* Light gray border */
+    border-radius: 5px; /* Add border radius */
+    padding: 8px; /* Add padding */
+    margin-bottom: 10px; /* Add margin bottom */
+    background-color: #fafafa; /* Light gray background */
+}
+
+.container .form form .forget-pass {
+    margin: -15px 0 15px 0;
+}
+
+.container .form form .forget-pass a {
+    font-size: 15px;
+    color: #003569; /* Instagram blue for links */
+}
+
+.container .form form .button-container {
+    display: flex;
+    justify-content: center; /* Center align the button */
+}
+
+.container .form form .button {
+    background: #3897f0; /* Instagram blue */
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    border: none;
+    padding: 12px 20px; /* Adjust padding */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .form form .button:hover {
+    background: #3182ca; /* Darker shade of Instagram blue */
+}
+
+.container .form form .link {
+    padding: 5px 0;
+}
+
+.container .form form .link a {
+    color: #003569; /* Instagram blue for links */
+}
+
+.container .form form p,
+.container .row .alert {
+    font-size: 14px;
+}
+
+/* Additional CSS for responsiveness */
+@media (max-width: 600px) {
+    .container .form {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .container .form form .button {
+        width: 100%; /* Make the button full width for smaller screens */
+    }
+}
+
+/* CSS for dropdown */
+.form-control[type="select"] {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow for webkit browsers */
+    -moz-appearance: none; /* Remove default arrow for mozilla browsers */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7 10l5 5 5-5H7z"/></svg>'); /* Add custom arrow */
+    background-position: right 10px center; /* Position arrow */
+    background-repeat: no-repeat; /* Disable arrow repeat */
+    background-size: 24px; /* Set arrow size */
+}
+
